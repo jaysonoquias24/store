@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVNX. | Home</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+<header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pb-1">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">EVNX.</a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!--Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active border-right" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-right" href="#">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle border-right" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown">
+                <span>
+                Category
+                </span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                <li><a class="dropdown-item border-bottom" href="#"><img src="img/category-1.png" width="20px"> Face Helmet</a></li>
+                <li><a class="dropdown-item border-bottom" href="#"><img src="img/category-2.png" width="20px"> Modular Helmet</a></li>
+                <li><a class="dropdown-item" href="#"><img src="img/category-3.png" width="20px"> Half Face Helmet</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Right Side  -->
+        <div class="d-flex align-items-center">
+          <!-- Currency Dropdown -->
+          <div class="dropdown">
+            <button class="btn btn-link dropdown-toggle text-orange" type="button" id="currencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>USD</span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+              <li><a class="dropdown-item border-bottom" href="#">USD</a></li>
+              <li><a class="dropdown-item border-bottom" href="#">EUR</a></li>
+              <li><a class="dropdown-item" href="#">PHP</a></li>
+            </ul>
+          </div>
+  
+          <!-- Search Bar -->
+          <form class="d-flex ms-1">
+            <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+  
+          <!-- Cart Icon -->
+          <div class="dropdown ms-3">
+            <a href="#" class="dropdown-toggle" id="cartDropdown" data-bs-toggle="dropdown" aria-expanded="false" >
+              <i class="bi bi-cart"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cartDropdown" style="min-width: 300px; text-decoration: none;">
+
+              <!-- Example Cart Items -->
+              <li class="dropdown-item d-flex align-items-center">
+                <div>
+                  <img src="img/product-1.png" alt="Item 1" width="50px">
+                </div>
+                <div class="ms-3">
+                  <p class="mb-0">Helmet A</p>
+                  <small>$150.00</small>
+                </div>
+              </li>
+              <li class="dropdown-item d-flex  align-items-center">
+                <div>
+                  <img src="img/product-3.png" alt="Item 2" width="50px">
+                </div>
+                <div class="ms-3">
+                  <p class="mb-0">Helmet B</p>
+                  <small>$200.00</small>
+                </div>
+              </li>
+              <!-- Cart Divider -->
+              <li><hr class="dropdown-divider"></li>
+              <!-- "See All" Option -->
+              <li><a class="dropdown-item text-center" href="#">See All</a></li>
+            </ul>
+          </div>
+  
+          <!-- Profile Icon -->
+          <a href="#" class="ms-3"><i class="bi bi-person"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!-- Hero Section -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <!-- First Slide -->
+      <div class="carousel-item active">
+        <img src="img/hero-section.png" class="d-block w-100" alt="Teixeira Adventure">
+        <div class="carousel-caption text-start" style="word-wrap: break-word;">
+               <!-- Title -->
+            <h2 class="display-4 fw-bold">Teixeira <br> Adventure</h2>
+            <p style="margin-bottom: 204px;">Advanced Polycarbonate Composite Shell</p>
+
+          <!-- Buttons Container-->
+          <div class="d-flex align-items-center p-2" style="border-radius: 8px; justify-content: space-between; width: 100%;">
+            <!-- Left Section -->
+            <div class="div-buttons d-flex bg-light flex-grow-1" style="background-color:white; width: 100%; max-width: 392px; height: 50px;">
+              <!-- Color -->
+              <div class="div-color d-flex align-items-center justify-content-center" style="width: 126px; height: 50px;">
+                <label class="text-uppercase fw-bold" style="font-size: 12px; color: black;">Color</label>
+                <div class="color-circle color-1" style="margin-left: 10px; "></div> <!-- color-1 in the css -->
+              </div>
+  
+              <!-- Price Display -->
+              <div class="div-price d-flex align-items-center justify-content-center" style="width: 126px; height: 50px;">
+                <span class="text-dark fw-bold" style="font-size: 12px;">Price:</span>
+                <span class="text-danger fw-bold" style="font-size: 14px;">$125.9</span>
+              </div>
+  
+              <!-- View Product Button -->
+              <div class="div-view-button d-flex align-items-center justify-content-center" style="background-color: #FF4500; width: 140px; height: 50px;">
+                <a href="#" class="btn btn-danger text-uppercase fw-bold" style="background-color: #FF4500; font-size: 12px; padding: 8px 16px; border-radius: 4px; border: none;">View Product</a>
+              </div>
+            </div>
+  
+            <!-- Divider -->
+            <div class="vr mx-3 d-none d-md-block" style="height: 50px;"></div>
+  
+            <!-- Right Section -->
+            <div class="p-1" style="width: 60px;">
+              <a href="#" class="btn btn-light p-2 ">
+                <i class="bi bi-share"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Second Slide -->
+      <div class="carousel-item">
+        <img src="img/hero-section-white.png" class="d-block w-100" alt="Teixeira Adventure">
+        <div class="carousel-caption text-start" style="word-wrap: break-word;">
+          <!-- Title -->
+          <h2 class="display-4 fw-bold">Teixeira <br> Adventure</h2>
+          <p style="margin-bottom: 204px;">Advanced Polycarbonate Composite Shell</p>
+          
+          <!-- Buttons Container  -->
+          <div class="d-flex align-items-center p-2" style="border-radius: 8px; justify-content: space-between; width: 100%;">
+
+            <!-- Left Section -->
+            <div class="div-buttons d-flex bg-light flex-grow-1" style="background-color:white; width: 100%; max-width: 392px; height: 50px;">
+
+              <!-- Color-->
+              <div class="div-color d-flex align-items-center justify-content-center" style="width: 126px; height: 50px;">
+                <label class="text-uppercase fw-bold" style="font-size: 12px; color: black;">Color</label>
+                <div class="color-circle color-2" style="margin-left: 10px;border:0.5px solid black;"></div> <!-- color-2 in the css -->
+              </div>
+  
+              <!-- Price Display -->
+              <div class="div-price d-flex align-items-center justify-content-center" style="width: 126px; height: 50px;">
+                <span class="text-dark fw-bold" style="font-size: 12px;">Price:</span>
+                <span class="text-danger fw-bold" style="font-size: 14px;">$125.9</span>
+              </div>
+  
+              <!-- View Product Button -->
+              <div class="div-view-button d-flex align-items-center justify-content-center" style="background-color: #FF4500; width: 140px; height: 50px;">
+                <a href="#" class="btn btn-danger text-uppercase fw-bold" style="background-color: #FF4500; font-size: 12px; padding: 8px 16px; border-radius: 4px; border: none;">View Product</a>
+              </div>
+            </div>
+  
+            <!-- Divider -->
+            <div class="vr mx-3 d-none d-md-block" style="height: 50px;"></div>
+  
+            <!-- Right Section-->
+            <div class="p-1" style="width: 60px;">
+              <a href="#" class="btn btn-light p-2">
+                <i class="bi bi-share"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  
+  <!-- New Products -->
+  <section id="new-products" class="py-5" style="padding-top: 3rem; padding-bottom: 3rem;">
+    <div class="container">
+      <h2 class="text-center" style="font-weight: 300; margin-bottom: 2rem;">New Products</h2>
+      <div class="row justify-content-center text-center">
+
+      
+        <!-- Product 1 -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card border-0" style="border: none; background-color: #F9F9F9;">
+            <img src="img/product-1.png" class="card-img-top img-fluid" alt="Helmet" style="max-width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold; font-size: 1.1rem; color: #333;">HJC CL-17 Captain America (Snell)</h5>
+              <p class="price" style="font-weight: bold; font-size: 1.2rem; color: #333;">$350.5</p>
+              <a href="#" class="btn btn-danger" style="background-color: #FF4500; color: white; border: none; text-transform: uppercase; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Product 2 -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card border-0" style="border: none; background-color: #F9F9F9;">
+            <img src="img/product-2.png" class="card-img-top img-fluid" alt="Helmet" style="max-width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold; font-size: 1.1rem; color: #333;">ZEUS Z-806 New Supertech I150 Matt</h5>
+              <p class="price" style="font-weight: bold; font-size: 1.2rem; color: #333;">$350.5</p>
+              <a href="#" class="btn btn-danger" style="background-color: #FF4500; color: white; border: none; text-transform: uppercase; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Product 3 -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card border-0" style="border: none; background-color: #F9F9F9;">
+            <img src="img/product-3.png" class="card-img-top img-fluid" alt="Helmet" style="max-width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold; font-size: 1.1rem; color: #333;">Arai Tour Cross 3 - Detour Red</h5>
+              <p class="price" style="font-weight: bold; font-size: 1.2rem; color: #333;">$350.5</p>
+              <a href="#" class="btn btn-danger" style="background-color: #FF4500; color: white; border: none; text-transform: uppercase; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Product 4 -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card border-0" style="border: none; background-color: #F9F9F9;">
+            <img src="img/product-3.png" class="card-img-top img-fluid" alt="Helmet" style="max-width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold; font-size: 1.1rem; color: #333;">Arai Tour Cross 3 - Detour Red</h5>
+              <p class="price" style="font-weight: bold; font-size: 1.2rem; color: #333;">$350.5</p>
+              <a href="#" class="btn btn-danger" style="background-color: #FF4500; color: white; border: none; text-transform: uppercase; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Blog and Events Section -->
+<section id="blog-events" class="py-5 mb-5">
+    <div class="container">
+      <div class="row">
+
+
+        <!-- Blog Section (Left) -->
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 style="font-weight: 700;">BLOG × EVENTS</h3>
+            <a href="#" class="text-danger" style="text-decoration: none; font-weight: 600;">SEE ALL</a>
+          </div>
+
+
+          <!-- Blog Item 1 -->
+          <div class="d-flex mb-4">
+            <img src="img/blog-1.png" class="img-fluid me-3" alt="Event Image" style="width: 80px; height: 80px;">
+            <div>
+              <p style="font-size: 0.8rem; color: #999;">02/06/2017</p>
+              <h5 class="mb-1" style="font-weight: 600; font-size: 1rem;">Dennis wins Van Doren Invitational WSBC Champ.</h5>
+              <a href="#" class="text-danger" style="font-weight: 600;">READ MORE</a>
+            </div>
+          </div>
+
+
+          <!-- Blog Item 2 -->
+          <div class="d-flex mb-4">
+            <img src="img/blog-2.png" class="img-fluid me-3" alt="Event Image" style="width: 80px; height: 80px;">
+            <div>
+              <p style="font-size: 0.8rem; color: #999;">02/06/2017</p>
+              <h5 class="mb-1" style="font-weight: 600; font-size: 1rem;">Dennis wins Van Doren Invitational WSBC Champ.</h5>
+              <a href="#" class="text-danger" style="font-weight: 600;">READ MORE</a>
+            </div>
+          </div>
+
+          
+          <!-- Blog Item 3 -->
+          <div class="d-flex">
+            <img src="img/blog-3.png" class="img-fluid me-3" alt="Event Image" style="width: 80px; height: 80px;">
+            <div>
+              <p style="font-size: 0.8rem; color: #999;">02/06/2017</p>
+              <h5 class="mb-1" style="font-weight: 600; font-size: 1rem;">Dennis wins Van Doren Invitational WSBC Champ.</h5>
+              <a href="#" class="text-danger" style="font-weight: 600;">READ MORE</a>
+            </div>
+          </div>
+        </div>
+  
+                <!-- Product Section (Right) -->
+                <div class="col-lg-6 col-md-12 text-center position-relative">
+
+                <!-- Overlay Image -->
+                <img src="img/helmet-transparent.png" class="img-fluid position-absolute" alt="Helmet Image" style="max-width: 800px; top: 50%; left:15%; transform: translate(-50%, -50%); z-index: 4;">
+        
+                <!-- Section (Left) -->
+                <div style="position: relative; height: 400px;">
+                  
+                <!-- BG elemebt  -->
+                <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-image: url('img/event-bg.png'); background-size: cover; background-position: center; filter: brightness(80%); z-index: 1;"></div>
+                    
+                <!-- Overlay content-->
+                <div class="overlay-content text-end" style="position: absolute; top: 50%; right: 10%; transform: translateY(-50%); z-index: 3; color: white;">
+                <h2 class="text-uppercase fw-bold" style="font-size: 40px;">AGV <br>Best<br> Sellers</h2>
+                        
+                <!-- Horizontal Divider -->
+                <hr style="width: auto; height: 3px; background-color: white; border: none; margin: 10px 0;">
+                
+                <p style="font-weight: 500;">See our most popular products</p>
+                <a href="#" class="btn btn-danger" style="background-color: #FF4500; border: none;">Shop Now</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white text-center">
+        <p>© 2024 Helmet Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="scripts.js"></script>
+
+
+</body>
+
+
+</html>
